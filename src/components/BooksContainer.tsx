@@ -32,7 +32,6 @@ const BooksContainer = () => {
   };
 
   useEffect(() => {
-    //console.log(Array.isArray(books));
     if (word === '' && Array.isArray(books) === false) {
       setLoading(false);
     } else {
@@ -40,8 +39,7 @@ const BooksContainer = () => {
         search(word);
       }
     }
-
-    //setLoading(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [word]);
 
   if (!loading) {

@@ -15,17 +15,6 @@ const SingleBook = () => {
   const currentBook = items.find((item: any) => item.id === text);
   const dispatch = useDispatch();
   const [booked, setbooked] = useState(false);
-  /*
-  useEffect(() => {
-    if (currentBook === [])
-      try {
-        const thisbook = items.find((item: any) => item.id === text);
-
-        dispatch(setCurrentBook(thisbook.volumeInfo));
-      } catch (error) {
-        console.log(error);
-      }
-  }, []);*/
 
   const {
     imageLinks,
