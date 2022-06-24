@@ -1,4 +1,5 @@
-![](https://file%2B.vscode-resource.vscode-cdn.net/c%3A/Users/Dario/Documents/Repo%20Github/booksapp/biblio_v2/public/android-chrome-384x384.png?version%3D1656083586242)
+![android-chrome-384x384](https://user-images.githubusercontent.com/85349333/175565432-8b634175-84ff-4a28-b575-16051a8b13ba.png)
+
 
 # BiblioTake
 
