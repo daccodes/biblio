@@ -18,7 +18,7 @@ const Home = () => {
 
   const handleClick = () => {
     if (inputText === '') {
-      setPlaceholder('Compila il campo!');
+      setPlaceholder('Fill the field!');
       inputRef.current?.focus();
     } else {
       dispatch(setText(inputText));
@@ -40,10 +40,10 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-12 md:max-w-6xl mx-auto md:border-slate-400 md:border-2 py-5">
+    <div className="grid grid-cols-12 md:max-w-6xl mx-auto py-5">
       <div className="md:col-span-2 md:grid hidden" />
       <div className="md:col-span-2 col-span-12">
-        <h1 className="py-4 text-center">Cerca un libro:</h1>
+        <h1 className="py-4 text-center">Search any books:</h1>
       </div>
 
       <div className="md:col-span-6 col-span-12 p-1 md:mx-0">

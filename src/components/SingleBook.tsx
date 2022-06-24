@@ -77,7 +77,7 @@ const SingleBook = () => {
                         item.volumeInfo.title === currentBook.volumeInfo.title
                     ) !== undefined
                   ) {
-                    alert('non puoi aggiungere 2 volte lo stesso libro!');
+                    alert('you can’t order the same book twice!');
                   } else {
                     dispatch(pushCart(currentBook));
                     setbooked(true);
@@ -85,15 +85,21 @@ const SingleBook = () => {
                 }}
                 disabled={booked}
               >
-                {'🛒 Prenota'}
+                {'🛒 Add to cart'}
               </button>
             </p>
             <p className="my-3">{publisher ? publisher : 'Publisher: -'}</p>
-            <p className="text-sm leading-6 mt-8">{`ISBN: ${industryIdentifiers[1]?.identifier}`}</p>
-            <p className="text-sm">{`Total Pages: ${pageCount}`}</p>
+            <p className="text-sm leading-6 mt-8">{`ISBN: ${
+              industryIdentifiers[1]?.identifier === undefined
+                ? '-'
+                : industryIdentifiers[1]?.identifier
+            }`}</p>
+            <p className="text-sm">{`Total Pages: ${
+              pageCount ? pageCount : '-'
+            }`}</p>
             <Link to="/">
               <p className="mx-auto mt-10 px-2 py-1 border rounded-xl text-center bg-red-800 text-white w-48">
-                Torna alla ricerca
+                Back
               </p>
             </Link>
           </div>

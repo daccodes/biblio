@@ -68,7 +68,7 @@ const Cart = ({ state }: ReturnType<any>) => {
           </div>
           {cart.length === 0 && (
             <div className="text-center pt-[2rem] pb-[3rem]">
-              Nel carrello non è presente alcun ordine
+              Your cart is empty!
             </div>
           )}
         </div>

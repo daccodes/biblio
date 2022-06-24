@@ -45,15 +45,13 @@ const BooksContainer = () => {
   if (!loading) {
     if (books === undefined) {
       return (
-        <h3>
-          Sfortunatamente non ho trovato nessun libro in base alla tua ricerca
-        </h3>
+        <h3>Unfortunately i haven't found any book based on your search 😟</h3>
       );
     } else {
       return (
         <div className="col-span-12">
           <p className="py-16 text-center">
-            Libri: {items.length} di {totalItems} trovati
+            Books: {items.length} of {totalItems} found
           </p>
           <div className="grid grid-cols-10">
             {items.map((item: ReturnType<any>) => {
