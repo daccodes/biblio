@@ -18,19 +18,3 @@ export const cartReducer = createReducer([] as Array<any>, (builder) =>
 
     .addCase(setCart, (state, action) => action.payload)
 );
-
-/*
-export const textReducer = createReducer('', {
-  [setText.type]: (state: string, action: PayloadAction<string>) =>
-    action.payload,
-});*/
-
-/*
-export function textReducer(state: string = '', action: any) {
-  switch (action.type) {
-    case setText.type:
-      return action.payload;
-  }
-  return state;
-}
-*/

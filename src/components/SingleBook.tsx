@@ -57,11 +57,7 @@ const SingleBook = () => {
           </div>
           <div className="md:ml-10 mx-6 pt-10 md:col-span-5 col-span-6">
             <p>
-              {' '}
               {'📕  '}
-              {/*authors.map((item: string) => (
-                <span>{item}</span>
-              ))*/}
               <span>{authors ? authors.toString() : 'unknown author'}</span>
               <span className="ml-3">{`< ${publishedDate?.slice(
                 0,
